@@ -1,0 +1,6 @@
+window._bd_share_main.F.module("share/like_api",function(e,t,n){var r=e("base/tangram").T,i=e("base/class").Class,s=e("share/api_base");t.Api=i.create(function(e){function r(e){window._bd_share_main.F.use("trans/data",function(t){t.get({type:"like_count",url:document.location.href,callback:function(t){var n={count:t};e&&e(n)}})})}function i(t){var n=e;window._bd_share_main.F.use("trans/trans",function(e){e.run({type:"like",url:document.location.href,callback:function(e){var n={err:e};t&&t(n)}})})}var t=this,n={count:0,clicked:!1};t._init=function(){var e=t.getView();e.render(),e.init(),r(function(t){n.count=t.count,e.setNumber(t.count)})},t._processAction=function(e){e.cmd=="like"&&(n.clicked?t.getView().showDoneState(e.element):i(function(r){n.clicked=!0,r.err==0?(n.count++,t.getView().addOne(e.element,n.count)):t.getView().showDoneState(e.element)}))}},s.ApiBase)});-------------
+
+**版权声明**
+
+本文为[dzl的学习笔记](https://blog.duozhilin.cn)原创文章，转载请注明出处。
+本文永久链接：http://blog.duozhilin.cn/baidu/static/api/js/share/like_api.js
