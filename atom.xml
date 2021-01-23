@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>dzl的学习笔记</title>
+  <title>学习笔记</title>
   
-  <subtitle>我的学习笔记</subtitle>
+  <subtitle>学习笔记</subtitle>
   <link href="http://blog.duozhilin.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.duozhilin.cn/"/>
@@ -10,7 +10,7 @@
   <id>http://blog.duozhilin.cn/</id>
   
   <author>
-    <name>dzl</name>
+    <name>some one</name>
     
   </author>
   
